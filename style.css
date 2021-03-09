@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffff;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+}
+
+#calculator {
+    width: 320px;
+    height: 500px;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    top: 25px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result {
+    height: 120px;
+}
+
+#keyboard {
+    height: 380px;
+}
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #919191;
+}
+
+#output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    padding-top: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.operator,
+.number,
+.empty {
+    height: 45px;
+    width: 50px;
+    float: left;
+    margin: 15px;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.number,
+.empty {
+    background-color: black;
+    color: white;
+}
+
+.operator {
+    background-color: #FACC2E;
+}
+
+.operator:focus,
+.number:focus {
+    outline: 0;
+}
+
+.operator:active,
+.number:active {
+    font-size: 13px;
+}
+
+.number:hover {
+    background-color: white;
+    color: black;
+}
+
+@media(max-width:1024px) {
+    #calculator {
+        top: 30%;
+        height: 600px;
+        width: 400px;
+    }
+    #result {
+        height: 140px;
+    }
+    .operator,
+    .number,
+    .empty {
+        height: 60px;
+        width: 68px;
+        font-size: 20px;
+    }
+}
